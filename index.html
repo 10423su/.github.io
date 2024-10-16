@@ -3,39 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的圖片網站</title>
+    <title>我的簡單網站</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ccc;
-            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+            background-color: #f0f0f0;
+            margin: 0;
             padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            gap: 20px; /* 圖片間距 */
+            flex-wrap: wrap; /* 當畫面過小時自動換行 */
+        }
+
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 圖片陰影 */
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>歡迎來到我的網站</h1>
-        <p>這是一個包含圖片的範例網站，展示如何將圖片嵌入到網頁中。</p>
-        <img src="https://via.placeholder.com/600x400" alt="https://i.imgur.com/cD25U3h.jpeg">
-        <p>圖片上方是範例圖片，您可以將它替換為自己的圖片。</p>
+
+<header>
+    <h1>歡迎來到我的網站</h1>
+</header>
+
+<main>
+    <p>這是一個使用 flex 排版的 HTML 範例，包含三張圖片。</p>
+
+    <div class="image-container">
+        <img src="https://i.imgur.com/cD25U3h.jpeg" alt="範例圖片 1">
+        <img src="https://i.imgur.com/QOVTpsx.jpeg" alt="範例圖片 2">
+        <img src="https://i.imgur.com/NMHzTQE.jpeg" alt="範例圖片 3">
     </div>
+</main>
+
+<footer>
+    <p>© 2024 我的網站</p>
+</footer>
+
 </body>
 </html>
-
